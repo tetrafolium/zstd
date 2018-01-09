@@ -48,9 +48,9 @@ inspecode:
     ignore: 'tests/**'
     auto-fix: true
     thresholds:
-      num-issues: 999
+      num-issues: 160
 
   unused:           ## for many-languages
     options: [--single-occurrence, --all-likelihoods]
     thresholds:
-      num-issues: 253
+      num-issues: 217
