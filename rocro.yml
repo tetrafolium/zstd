@@ -22,8 +22,10 @@ inspecode:
       num-issues: 10
 
   cpplint:          ## for C++
+    options:
+      --verbose: 4
     thresholds:
-      num-issues: 999
+      num-issues: 905
 
   grep:             ## for any-languages
     thresholds:
