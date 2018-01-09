@@ -3,46 +3,52 @@ inspecode:
   thresholds:
     complexity: 25    # default=15
 
-  astyle:           ## for C
+  astyle:           ## for C, C++
     auto-fix: true
     thresholds:
-      num-issues: 999
+      num-issues: 172
 
-  clang-format:     ## for C
+  clang-format:     ## for C, C++
     auto-fix: true
     thresholds:
-      num-issues: 999
+      num-issues: 194
 
-  cpd:              ## for C
+  cpd:              ## for many-languages
     thresholds:
-      num-issues: 999
+      num-issues: 12
 
-  cppcheck:         ## for C
+  cppcheck:         ## for C, C++
     thresholds:
       num-issues: 10
 
-  grep:             ## for any-languages
+  cpplint:          ## for C++
     thresholds:
       num-issues: 999
 
-  infer:            ## for C
+  grep:             ## for any-languages
     thresholds:
-      num-issues: 999
+      num-issues: 10
+
+  infer:            ## for C, C++
+    thresholds:
+      num-issues: 9
 
   misspell:         ## for any-languages
     auto-fix: true
     thresholds:
       num-issues: 56
 
-  scan-build:       ## for C
+  scan-build:       ## for C, C++
     thresholds:
-      num-issues: 999
+      num-issues: 31
 
-  uncrustify:       ## for C
+  uncrustify:       ## for C, C++
+    ignore: 'tests/**'
     auto-fix: true
     thresholds:
       num-issues: 999
 
-  unused:           ## for C
+  unused:           ## for many-languages
+    options: [--single-occurrence, --all-likelihoods]
     thresholds:
-      num-issues: 999
+      num-issues: 253
