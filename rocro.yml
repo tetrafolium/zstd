@@ -24,8 +24,10 @@ inspecode:
   cpplint:          ## for C++
     options:
       --verbose: 4
+      --filter:
+      - -whitespace
     thresholds:
-      num-issues: 905
+      num-issues: 568
 
   grep:             ## for any-languages
     thresholds:
@@ -36,9 +38,12 @@ inspecode:
       num-issues: 9
 
   misspell:         ## for any-languages
+    options:
+      -i:
+      - strat   # shorten for strategy
     auto-fix: true
     thresholds:
-      num-issues: 56
+      num-issues: 26
 
   scan-build:       ## for C, C++
     thresholds:
