@@ -1,0 +1,48 @@
+inspecode:
+
+  thresholds:
+    complexity: 25    # default=15
+
+  astyle:           ## for C
+    auto-fix: true
+    thresholds:
+      num-issues: 999
+
+  clang-format:     ## for C
+    auto-fix: true
+    thresholds:
+      num-issues: 999
+
+  cpd:              ## for C
+    thresholds:
+      num-issues: 999
+
+  cppcheck:         ## for C
+    thresholds:
+      num-issues: 10
+
+  grep:             ## for any-languages
+    thresholds:
+      num-issues: 999
+
+  infer:            ## for C
+    thresholds:
+      num-issues: 999
+
+  misspell:         ## for any-languages
+    auto-fix: true
+    thresholds:
+      num-issues: 56
+
+  scan-build:       ## for C
+    thresholds:
+      num-issues: 999
+
+  uncrustify:       ## for C
+    auto-fix: true
+    thresholds:
+      num-issues: 999
+
+  unused:           ## for C
+    thresholds:
+      num-issues: 999
